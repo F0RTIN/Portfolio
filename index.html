@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alexandre Fortin — Creative Technologist · Portfolio</title>
+  <meta name="description" content="" />
+  <meta name="author" content="Alexandre Fortin" />
+  <meta name="keywords"
+    content="Alexandre Fortin, Creative Technologist, Prototypage Rapide, Mécanique, Électronique, Systèmes Embarqués, Ingénieur R&D, Robotique" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alexandre Fortin — Creative Technologist · Portfolio" />
+  <meta property="og:description"
+    content="Découvrez les prototypes physiques, mécanismes, électronique embarquée et projets d'ingénierie d'Alexandre Fortin." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/davincibot-arena.jpg" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       NAVBAR (Monochrome Glass with EN | FR Switcher)
+       ====================================================================== -->
+  <header class="apple-navbar" id="main-navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="#hero" class="nav-logo-text" id="nav-brand-logo">Alexandre Fortin</a>
+        <span class="nav-status-badge">
+          <span class="status-pulse-dot"></span>
+          <span data-i18n="navStatus">Disponible Stage R&D</span>
+        </span>
+      </div>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link" id="nav-link-about" data-i18n="navAbout">À Propos</a>
+        <a href="#main-choice-section" class="nav-link" id="nav-link-projects" data-i18n="navProjects">Projets</a>
+        <a href="#main-choice-section" class="nav-link" id="nav-link-experience" data-i18n="navExperience">Expériences</a>
+        <a href="#contact" class="nav-link" id="nav-link-contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- EN | FR Switcher Pill -->
+        <div class="lang-switcher-pill" role="group" aria-label="Language selection">
+          <button id="lang-en" class="lang-btn" aria-label="Switch to English">EN</button>
+          <button id="lang-fr" class="lang-btn active" aria-label="Passer en Français">FR</button>
+        </div>
+
+        <a href="assets/docs/CV_Alexandre_Fortin.pdf" target="_blank" rel="noopener noreferrer" class="nav-cv-btn"
+          id="nav-cv-link" title="Télécharger le CV au format PDF">
+          <span data-i18n="navDownloadCv">Télécharger CV</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO & FIRST-PERSON BIO SECTION (Top of the page)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge-tag">
+          <span data-i18n="heroBadge">PORTFOLIO · 2026</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="heroName">ALEXANDRE FORTIN</h1>
+        <h2 class="hero-subtitle" data-i18n="heroSubtitle">Creative Technologist</h2>
+
+        <!-- First-Person Authentic Bio (Written in "Je", direct & engineer-focused) -->
+        <div class="hero-bio-container">
+          <p class="hero-bio-text" data-i18n="heroBio1">
+            Passer rapidement d'une idée à un prototype fonctionnel — mécanique, électronique et logiciel avec l'exigence de la démarche scientifique. Je conçois des systèmes concrets et tangibles à partir d'idée ou problème posés.
+          </p>
+        </div>
+
+        <!-- Academic & Research Track Badges -->
+        <div class="hero-credentials-row">
+          <div class="credential-pill">
+            <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span data-i18n="credEsilv">ESILV — Diplôme d'Ingénieur</span>
+          </div>
+          <div class="credential-pill">
+            <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span data-i18n="credIft">IFT — Mastère Creative Technologist</span>
+          </div>
+        </div>
+
+        <!-- Key Engineering Competencies Matrix -->
+        <div class="hero-skills-block">
+          <span class="hero-skills-label" data-i18n="heroSkillsTitle">Compétences Clés :</span>
+          <div class="skills-chips-wrapper">
+            <span class="tag-pill">Conception CAO 3D (Onshape, SolidWorks)</span>
+            <span class="tag-pill">Prototypage Rapide (Impression 3D, Découpe Laser, Soudure)</span>
+            <span class="tag-pill">Design PCB (KiCad)</span>
+            <span class="tag-pill">Électronique & Microcontrôleurs (ESP32, Arduino)</span>
+            <span class="tag-pill">C / C# / Java & Python</span>
+            <span class="tag-pill">Design Thinking & Low-Tech</span>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero-cta-group">
+          <a href="#main-choice-section" id="hero-btn-projects" class="apple-btn apple-btn-primary">
+            <span data-i18n="heroBtnProjects">Explorer les Projets</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#main-choice-section" id="hero-btn-experience" class="apple-btn apple-btn-secondary">
+            <span data-i18n="heroBtnExperience">Voir les Expériences</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Trait horizontal séparant l'en-tête du reste -->
+      <div class="hero-divider" role="separator" aria-hidden="true"></div>
+    </section>
+
+    <!-- ======================================================================
+         CHOICE SELECTOR SECTION (Segmented Pill)
+         ====================================================================== -->
+    <section class="choice-section" id="main-choice-section" aria-label="Navigation Section">
+      <div class="segmented-control-container">
+        <button id="tab-btn-projects" class="segmented-btn active" aria-label="Afficher les projets">
+          <span data-i18n="tabProjects">PROJETS</span>
+          <span class="segmented-badge">8</span>
+        </button>
+        <button id="tab-btn-experience" class="segmented-btn" aria-label="Afficher les expériences">
+          <span data-i18n="tabExperience">EXPÉRIENCE</span>
+          <span class="segmented-badge">3</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PROJECTS SECTION
+         ====================================================================== -->
+    <section class="content-wrapper" id="projects-section">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="projectsHeading">Projets Réalisés</h2>
+        <p class="section-subheading" data-i18n="projectsSubheading">
+          Prototypes physiques concrets, robotique autonome, rétro-ingénierie mécanique, bio-matériaux et
+          expérimentations interactives.
+        </p>
+      </div>
+
+      <div class="projects-container" id="projects-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EXPERIENCE SECTION
+         ====================================================================== -->
+    <section class="content-wrapper hidden-content" id="experience-section">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="experienceHeading">Parcours Professionnel</h2>
+        <p class="section-subheading" data-i18n="experienceSubheading">
+          R&D en robotique, management opérationnel et bancs d'essais pour la propulsion aérospatiale.
+        </p>
+      </div>
+
+      <div class="timeline-wrapper" id="experience-timeline">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION & CLEAN FOOTER
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="content-wrapper">
+        <h2 class="section-title" data-i18n="contactHeading">Contact</h2>
+        <p class="section-subheading" style="margin-bottom: 36px;" data-i18n="contactSubheading">
+          À la recherche d'un stage de fin d'études : Ingénieur R&D, Conception Produit, Prototypage.
+        </p>
+
+        <div class="contact-card apple-card">
+          <div class="contact-email-wrapper">
+            <span class="contact-email-text">alexandre.fortin88@gmail.com</span>
+            <button class="apple-btn apple-btn-primary" id="copy-email-btn">
+              <span data-i18n="contactEmailBtn">Copier l'Email</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="contact-links-row">
+            <a href="tel:0637480038" class="contact-link-pill">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>06 37 48 00 38</span>
+            </a>
+            <a href="https://github.com/f0rtin" target="_blank" rel="noopener noreferrer" class="contact-link-pill">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <span>GitHub (f0rtin)</span>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link-pill">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <footer class="footer-bar">
+          <p>© 2026 Alexandre Fortin · Creative Technologist</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       PROJECT DETAILS POPUP MODAL (Monochrome High-End Lightbox)
+       ====================================================================== -->
+  <div class="modal-backdrop" id="project-modal-backdrop" role="dialog" aria-modal="true"
+    aria-labelledby="modal-project-title">
+    <div class="modal-dialog">
+      <div class="modal-header-sticky">
+        <div class="modal-title-wrap">
+          <span class="modal-category" id="modal-project-category"></span>
+          <h3 class="modal-title" id="modal-project-title"></h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Fermer la fenêtre">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Interactive Multi-Image Gallery -->
+        <div class="modal-gallery-area">
+          <div class="modal-gallery-viewport">
+            <button class="gallery-nav-arrow gallery-prev-btn" id="gallery-prev-btn" aria-label="Image précédente">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <img id="modal-gallery-main" src="" alt="Aperçu du projet" />
+            <button class="gallery-nav-arrow gallery-next-btn" id="gallery-next-btn" aria-label="Image suivante">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-gallery-thumbs" id="modal-gallery-thumbs"></div>
+        </div>
+
+        <div class="modal-tagline" id="modal-project-tagline"></div>
+        <div class="modal-overview" id="modal-project-overview"></div>
+
+        <div id="modal-project-highlights"></div>
+        <div id="modal-project-challenges"></div>
+        <div id="modal-project-tech"></div>
+
+        <div class="modal-actions-bar" id="modal-project-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       LIVE DEMO MODAL (For WebGPU experiments)
+       ====================================================================== -->
+  <div class="modal-backdrop" id="demo-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-dialog demo-modal-dialog">
+      <div class="modal-header-sticky">
+        <div class="modal-title-wrap">
+          <span class="modal-category">LIVE WEBGPU DEMO</span>
+          <h3 class="modal-title" id="demo-modal-title">Démonstration Interactive</h3>
+        </div>
+        <button class="modal-close-btn" id="demo-modal-close-btn" aria-label="Fermer la démo">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="demo-iframe-wrapper">
+        <iframe id="demo-iframe" class="demo-iframe" src="about:blank"
+          allow="accelerometer; camera; gyroscope; microphone" title="WebGPU Demo"></iframe>
+      </div>
+
+      <div class="demo-modal-footer">
+        <span id="demo-modal-notice">Démo interactive dans le navigateur (recommandé sous Chrome / Edge).</span>
+        <a id="demo-modal-direct-link" href="#" target="_blank" rel="noopener noreferrer"
+          class="apple-btn apple-btn-secondary" style="padding: 6px 14px; font-size: 0.8rem;">
+          <span>Ouvrir dans un nouvel onglet</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification for copy email -->
+  <div class="toast-notification" id="copy-toast">Email copié !</div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

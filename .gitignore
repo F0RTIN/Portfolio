@@ -1,0 +1,12 @@
+# Ignorer tous les dossiers et fichiers par défaut (dossiers de projets bruts, notes, etc.)
+/*
+
+# Fichiers racine nécessaires pour GitHub Pages et la documentation
+!/.gitignore
+!/README.md
+!/index.html
+!/app.js
+!/style.css
+
+# Dossier des médias (images des projets et CV PDF)
+!/assets/

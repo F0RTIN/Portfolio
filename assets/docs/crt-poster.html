@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analog Warmth — CHI Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #e8e4de;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .poster {
+    width: 794px;
+    min-height: 1123px;
+    background: #f5f1ea;
+    padding: 52px 56px 44px;
+    border: 1px solid #c8c0b0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1.5px solid #2a2520;
+    padding-bottom: 10px;
+    margin-bottom: 28px;
+  }
+  .chi-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7a6f62;
+  }
+  .authors {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: #7a6f62;
+    text-align: right;
+  }
+  .title-block { margin-bottom: 32px; }
+  .main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #1e1a16;
+    line-height: 1.0;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .main-title em { font-style: italic; font-weight: 400; }
+  .subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    color: #5a5048;
+    line-height: 1.6;
+    max-width: 560px;
+    border-left: 2px solid #c0a882;
+    padding-left: 12px;
+  }
+  .body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 36px;
+    margin-bottom: 24px;
+  }
+  .full { grid-column: 1 / -1; }
+  .section-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: #b09878;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1e1a16;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .body-text {
+    font-size: 10.5px;
+    font-weight: 300;
+    color: #3c3530;
+    line-height: 1.75;
+  }
+  .body-text em { font-style: italic; color: #1e1a16; }
+  .rule { height: 1px; background: #d0c8bc; margin: 4px 0 10px; }
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    margin-top: 12px;
+    border-top: 1px solid #c8c0b0;
+    border-bottom: 1px solid #c8c0b0;
+  }
+  .compare-col { padding: 8px 6px; }
+  .compare-col.analog { border-right: 1px solid #c8c0b0; }
+  .compare-col.digital { border-left: 1px solid #c8c0b0; }
+  .vs-col {
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #b09878;
+  }
+  .compare-head {
+    font-family: 'IBM Plex Mono', monospace; font-size: 8px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: #b09878; margin-bottom: 4px;
+  }
+  .compare-row { font-size: 9.5px; color: #3c3530; line-height: 1.7; font-weight: 300; }
+  .quote { border-left: 2px solid #b09878; padding: 8px 12px; margin: 10px 0; background: rgba(192,168,130,0.07); }
+  .quote-text { font-family: 'Playfair Display', serif; font-size: 10px; font-style: italic; color: #3c3530; line-height: 1.65; }
+  .quote-source { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #9a8878; margin-top: 5px; }
+  .install-section { display: grid; grid-template-columns: 185px 1fr; gap: 22px; align-items: start; }
+  .wide-quote {
+    border-top: 1.5px solid #2a2520; border-bottom: 1.5px solid #2a2520;
+    padding: 14px 0; margin: 20px 0;
+  }
+  .wide-quote-text {
+    font-family: 'Playfair Display', serif; font-size: 10px; font-style: italic;
+    color: #3c3530; line-height: 1.75; column-count: 2; column-gap: 28px;
+  }
+  .wide-quote-source { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #9a8878; margin-top: 8px; }
+  .cta { text-align: center; padding: 16px; border: 1.5px solid #2a2520; margin-bottom: 22px; }
+  .cta-main { font-family: 'Playfair Display', serif; font-size: 20px; font-style: italic; color: #1e1a16; margin-bottom: 4px; }
+  .cta-sub { font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: #9a8878; }
+  .footer { border-top: 1px solid #c8c0b0; padding-top: 12px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .footer-text { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #b09878; line-height: 1.8; }
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .tag { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #9a8878; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <div class="header">
+    <div class="chi-label">CHI 2025 — Interactivity &amp; Arts · Poster</div>
+    <div class="authors">[Author] · [Institution] · [email]</div>
+  </div>
+
+  <div class="title-block">
+    <div class="main-title">The Warmth of<br><em>Analog Matter</em></div>
+    <div class="subtitle">
+      Tangible phenomena, embodied affordances, and the creative agency of physical matter —
+      an interactive CRT installation as a site of encounter between human hands and nonhuman vitality.
+    </div>
+  </div>
+
+  <div class="body-grid">
+
+    <div class="section">
+      <div class="section-num">01 — Premise</div>
+      <div class="section-title">What Digital Cannot Simulate</div>
+      <div class="body-text">
+        Analog technologies do not represent the world — they <em>transduce</em> it. A vinyl groove is a physical trace of acoustic pressure; a CRT phosphor is excited by actual electrons. This directness produces <em>warmth</em>: a quality born of material imperfection, drift, and noise.
+      </div>
+      <div class="compare">
+        <div class="compare-col analog">
+          <div class="compare-head">Analog</div>
+          <div class="compare-row">Vinyl — groove physics, warm harmonics, dust &amp; crackle<br>Film — silver halide grain, chemical time</div>
+        </div>
+        <div class="vs-col">↔</div>
+        <div class="compare-col digital">
+          <div class="compare-head">Digital</div>
+          <div class="compare-row">Audio — sample rate, bit depth, pristine zeros<br>Photo — pixel grid, ISO simulation, instant deletion</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02 — Affordance Theory</div>
+      <div class="section-title">The Body Knows</div>
+      <div class="body-text">
+        Gibson's concept of <em>affordance</em> names the action-possibilities a thing offers a body. Analog objects afford <em>physically</em>: a potentiometer invites the grip, the turn, the resistance. Its feedback is continuous — no quantization, no menu. The body knows what to do before the mind interprets.
+      </div>
+      <svg width="220" height="60" viewBox="0 0 220 60" style="margin-top:12px;display:block;" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="28" r="14" stroke="#2a2520" stroke-width="1.2"/>
+        <line x1="30" y1="14" x2="30" y2="8" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="44" y1="28" x2="50" y2="28" stroke="#c0a882" stroke-width="1"/>
+        <line x1="16" y1="28" x2="10" y2="28" stroke="#c0a882" stroke-width="1"/>
+        <path d="M60 28 Q80 10 100 28 Q120 46 140 28" stroke="#2a2520" stroke-width="1"/>
+        <polygon points="140,28 134,24 134,32" fill="#2a2520"/>
+        <path d="M152 28 Q159 18 166 28 Q173 38 180 28 Q187 18 194 28 Q201 38 208 28" stroke="#b09878" stroke-width="1.2"/>
+        <text x="22" y="52" font-family="IBM Plex Mono" font-size="7" fill="#9a8878">TURN</text>
+        <text x="82" y="52" font-family="IBM Plex Mono" font-size="7" fill="#9a8878">CONTINUOUS</text>
+        <text x="162" y="52" font-family="IBM Plex Mono" font-size="7" fill="#9a8878">EFFECT</text>
+      </svg>
+    </div>
+
+    <div class="section full">
+      <div class="rule"></div>
+      <div class="section-num">03 — The Installation</div>
+      <div class="install-section">
+        <svg viewBox="0 0 185 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- CRT body -->
+          <rect x="8" y="6" width="162" height="112" rx="12" stroke="#2a2520" stroke-width="1.4"/>
+          <!-- Screen bezel -->
+          <rect x="20" y="16" width="138" height="90" rx="6" stroke="#2a2520" stroke-width="1.1"/>
+          <!-- Screen face -->
+          <rect x="26" y="21" width="126" height="80" rx="4" stroke="#b09878" stroke-width="1" fill="rgba(192,168,130,0.07)"/>
+          <!-- Scanlines -->
+          <line x1="26" y1="33" x2="152" y2="33" stroke="#c0a882" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <line x1="26" y1="46" x2="152" y2="46" stroke="#c0a882" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <line x1="26" y1="59" x2="152" y2="59" stroke="#c0a882" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <line x1="26" y1="72" x2="152" y2="72" stroke="#c0a882" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <line x1="26" y1="85" x2="152" y2="85" stroke="#c0a882" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <!-- CRT back taper -->
+          <path d="M8 18 Q0 18 2 62" stroke="#2a2520" stroke-width="1" stroke-dasharray="3 2"/>
+          <path d="M170 18 Q178 18 176 62" stroke="#2a2520" stroke-width="1" stroke-dasharray="3 2"/>
+          <!-- Stand -->
+          <rect x="68" y="118" width="42" height="7" rx="2" stroke="#2a2520" stroke-width="1.1"/>
+          <rect x="54" y="125" width="70" height="5" rx="2" stroke="#2a2520" stroke-width="1.1"/>
+          <!-- 4 knobs -->
+          <circle cx="46" cy="146" r="7" stroke="#2a2520" stroke-width="1.2"/>
+          <line x1="46" y1="139" x2="46" y2="143" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="72" cy="146" r="7" stroke="#2a2520" stroke-width="1.2"/>
+          <line x1="69" y1="140" x2="71" y2="143" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="98" cy="146" r="7" stroke="#2a2520" stroke-width="1.2"/>
+          <line x1="98" y1="139" x2="98" y2="143" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="124" cy="146" r="7" stroke="#2a2520" stroke-width="1.2"/>
+          <line x1="127" y1="140" x2="125" y2="143" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Labels -->
+          <text x="35" y="162" font-family="IBM Plex Mono" font-size="6" fill="#9a8878">HUE</text>
+          <text x="59" y="162" font-family="IBM Plex Mono" font-size="6" fill="#9a8878">SCALE</text>
+          <text x="84" y="162" font-family="IBM Plex Mono" font-size="6" fill="#9a8878">H-POS</text>
+          <text x="110" y="162" font-family="IBM Plex Mono" font-size="6" fill="#9a8878">FOCUS</text>
+          <!-- Touch arrow -->
+          <path d="M148 152 L138 146" stroke="#b09878" stroke-width="1" stroke-dasharray="2 1"/>
+          <polygon points="138,146 143,147 141,152" fill="#b09878"/>
+          <text x="149" y="155" font-family="IBM Plex Mono" font-size="6.5" fill="#b09878">← touch</text>
+        </svg>
+
+        <div>
+          <div class="section-title">Cathode Variations</div>
+          <div class="body-text">
+            A vintage CRT monitor plays an analog video loop — signal routed through original circuitry, never digitized. The internal electronics have been physically modified: potentiometers soldered directly onto deflection yoke circuits, color guns, and sync generators.
+            <br><br>
+            Each knob reaches <em>into the electron beam itself</em>. Turning a control does not send a command to software — it alters voltage directly, bending the physics of cathode emission and magnetic deflection in real time.
+            <br><br>
+            This is not a simulation of analog warmth. It <em>is</em> analog process, made tangible and interactive. The visitor becomes a co-author of the image — negotiating with electromagnetic fields through their hands.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04 — Vital Materiality</div>
+      <div class="section-title">When Matter Organizes Itself</div>
+      <div class="body-text">
+        Jane Bennett's <em>vibrant matter</em> challenges the border between inert stuff and lively agency. The CRT electron beam is not a symbol of vitality — it is a form of it. Following Kafka's Odradek — animate wood, spontaneous structure — the tube resides in a world where the line between inert matter and vital energy is permeable.
+      </div>
+      <div class="quote" style="margin-top:10px;">
+        <div class="quote-text">"A hint of the animate in plants, and of the vegetable in animals."</div>
+        <div class="quote-source">— Gilles Deleuze, Bergsonism, 1991</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05 — Research Questions</div>
+      <div class="section-title">What We Investigate</div>
+      <div class="body-text">
+        <strong style="font-weight:500;color:#b09878;">RQ1</strong> &nbsp;Does direct manipulation of physical circuits produce qualitatively different felt experience than software-mediated control?
+        <br><br>
+        <strong style="font-weight:500;color:#b09878;">RQ2</strong> &nbsp;Can material imperfection — noise, drift, bloom — be designed as aesthetic resource rather than engineering flaw?
+        <br><br>
+        <strong style="font-weight:500;color:#b09878;">RQ3</strong> &nbsp;How does Bennett's "vibrant matter" framework reframe the CRT as co-author rather than tool?
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wide-quote">
+    <div class="wide-quote-text">
+      Manuel De Landa describes the power of nonhuman materiality to "self-organize": inorganic matter-energy has a wider range of alternatives for the generation of structure than just simple phase transitions. Even the humblest forms of matter have the potential for self-organization — coherent waves called solitons form in ocean waters and lasers alike. Stable attractors sustain coherent cyclic activity. When put together, these forms of spontaneous structural generation suggest that inorganic matter is much more variable and creative than we ever imagined. This insight into matter's inherent creativity needs to be fully incorporated into our new materialist philosophies.
+    </div>
+    <div class="wide-quote-source">— Manuel De Landa, via Jane Bennett · "The Force of Things: Steps toward an Ecology of Matter" · Political Theory, June 2004</div>
+  </div>
+
+  <div class="cta">
+    <div class="cta-main">Approach the screen. Turn the knobs. Alter the beam.</div>
+    <div class="cta-sub">The controls are physical — interact directly</div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      CHI 2025 · Interactivity &amp; Arts Track<br>
+      [Author] · [Institution] · [email@domain.edu]
+    </div>
+    <div class="tags">
+      <span class="tag">#tangible-ui</span>
+      <span class="tag">#analog-media</span>
+      <span class="tag">#vibrant-matter</span>
+      <span class="tag">#CRT</span>
+      <span class="tag">#affordance</span>
+      <span class="tag">#circuit-bending</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
