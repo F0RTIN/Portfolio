@@ -437,42 +437,41 @@ const portfolioData = {
   ],
 
   experiences: [
+
     {
-      id: "ifollow",
-      company: "iFollow",
+      id: "arianegroup",
+      company: "ArianeGroup",
       role: {
-        en: "R&D Robotics Engineer Intern — AMR & LiDAR Calibration",
-        fr: "Stagiaire Ingénieur R&D — Robotique AMR & Calibration LiDAR"
+        en: "Electrical Engineering & Industrial Computing Intern",
+        fr: "Stagiaire Ingénieur Génie Électrique & Informatique Industrielle"
       },
       period: {
-        en: "2023 · 1.5 Months",
-        fr: "2023 · 1,5 Mois"
+        en: "2026 · 4 Months",
+        fr: "2026 · 4 Mois"
       },
       badge: {
-        en: "Robotics R&D & LiDAR Calibration",
-        fr: "R&D Robotique & Calibration LiDAR"
+        en: "Rocket Engine Test Benches · ATEX Standards",
+        fr: "Zone d'Essai Moteurs de Fusée · Normes ATEX"
       },
       summary: {
-        en: "Led an autonomous R&D project in an Autonomous Mobile Robots (AMR) startup to solve industrial LiDAR calibration. Using computer vision, mechanical gimbals and establishing protocols to ensure perfect leveling of the LiDAR sensors.",
-        fr: "Projet de R&D mené en totale autonomie au sein d'une start-up de robots mobiles autonomes (AMR) pour automatiser le nivelage des LiDARs. Utilisation de la vision par ordinateur, de cardans mécaniques et établissement de protocoles pour garantir le parfait nivellement des capteurs LiDARs."
+        en: "Integrated the rocket engine test bench facility team to conceive and deploy an autonomous computer-aided engineering software tool compliant with explosive ATEX industrial standards.",
+        fr: "Intégration de la zone d'essai des moteurs de fusée pour concevoir et déployer en autonomie un logiciel métier d'aide à la conception conforme aux normes ATEX."
       },
       bullets: {
         en: [
-          "Autonomously managed an applied R&D sprint adhering to rigorous research engineering methodologies.",
-          "Addressed the industrial challenge of factory-line LiDAR sensor leveling repeatability across diverse mobile robot chassis.",
-          "Developed an automated computer vision solution using OpenCV: analyzed laser sweep patterns to automatically validate and servo sensor alignment.",
-          "Implemented mechanical gimbals to ensure perfect leveling of the LiDAR sensors.",
-          "Formulated scientific test protocols, conducted state-of-the-art benchmarks, interfaced with technical suppliers, and delivered comprehensive engineering reports."
+          "Embedded within an engineering unit designing critical complex systems (electronics, PLCs, industrial power supplies, networks) on rocket propulsion test stands.",
+          "Collaborated directly with senior systems architects to define functional requirements, technical specifications, and safety directives.",
+          "Conceived and programmed from scratch a specialized computer-aided design software tool strictly adhering to ATEX (explosive atmosphere) safety directives.",
+          "Designed ergonomic Human-Machine Interfaces (HMI/GUI), engineered secure data storage and sharing, and delivered a standalone executable deployed service-wide."
         ],
         fr: [
-          "Conduite en pleine autonomie d'un projet de R&D selon les méthodes et exigences de l'ingénierie de recherche.",
-          "Résolution de la problématique industrielle du nivelage rapide et répétable des capteurs LiDARs sur différents châssis de robots en sortie d'usine.",
-          "Développement d'une méthode de vision par ordinateur sous OpenCV : analyse du balayage laser pour valider et asservir automatiquement le nivelage.",
-          "Mise en place de cardans mécaniques pour le montage des LiDARs afin d'assurer un nivellement parfait.",
-          "Définition de protocoles d'essais, veille technologique, relations avec fournisseurs spécialisés et rédaction des rapports de synthèse."
+          "Immersion au sein d'un service d'ingénieurs concepteurs de systèmes complexes (électronique, automates programmables, puissance, réseaux) sur bancs d'essai moteurs.",
+          "Définition du cahier des charges et expression des besoins fonctionnels en collaboration directe avec les ingénieurs seniors du site.",
+          "Conception et programmation intégrale d'un logiciel métier d'aide à la conception rigoureusement conforme aux normes ATEX (atmosphères explosives).",
+          "Développement complet de l'interface homme-machine (IHM), gestion sécurisée du stockage et du partage de données, et livraison d'un exécutable déployé dans le service."
         ]
       },
-      skills: ["OpenCV", "Python", "Autonomous Mobile Robots (AMR)", "LiDAR Sensors", "Mechanical Gimbals", "Test Protocols", "R&D Engineering"]
+      skills: ["Normes ATEX", "Architecture Logicielle", "Conception IHM / GUI", "Systèmes Complexes", "Informatique Industrielle", "Bancs d'Essais Moteurs"]
     },
     {
       id: "super-u",
@@ -510,40 +509,43 @@ const portfolioData = {
       skills: ["Management d'Équipe", "Relation Client", "Résolution de Crise", "Logistique Opérationnelle", "Gestion de Flotte"]
     },
     {
-      id: "arianegroup",
-      company: "ArianeGroup",
+      id: "ifollow",
+      company: "iFollow",
       role: {
-        en: "Electrical Engineering & Industrial Computing Intern",
-        fr: "Stagiaire Ingénieur Génie Électrique & Informatique Industrielle"
+        en: "R&D Robotics Engineer Intern — AMR & LiDAR Calibration",
+        fr: "Stagiaire Ingénieur R&D — Robotique AMR & Calibration LiDAR"
       },
       period: {
-        en: "2026 · 4 Months",
-        fr: "2026 · 4 Mois"
+        en: "2023 · 2 Months",
+        fr: "2023 · 2 Mois"
       },
       badge: {
-        en: "Rocket Engine Test Benches · ATEX Standards",
-        fr: "Zone d'Essai Moteurs de Fusée · Normes ATEX"
+        en: "Robotics R&D & LiDAR Calibration",
+        fr: "R&D Robotique & Calibration LiDAR"
       },
       summary: {
-        en: "Integrated the rocket engine test bench facility team to conceive and deploy an autonomous computer-aided engineering software tool compliant with explosive ATEX industrial standards.",
-        fr: "Intégration de la zone d'essai des moteurs de fusée pour concevoir et déployer en autonomie un logiciel métier d'aide à la conception conforme aux normes ATEX."
+        en: "Led an autonomous R&D project in an Autonomous Mobile Robots (AMR) startup to solve industrial LiDAR calibration. Using computer vision, mechanical gimbals and establishing protocols to ensure perfect leveling of the LiDAR sensors.",
+        fr: "Projet de R&D mené en totale autonomie au sein d'une start-up de robots mobiles autonomes (AMR) pour automatiser le nivelage des LiDARs. Utilisation de la vision par ordinateur, de cardans mécaniques et établissement de protocoles pour garantir le parfait nivellement des capteurs LiDARs."
       },
       bullets: {
         en: [
-          "Embedded within an engineering unit designing critical complex systems (electronics, PLCs, industrial power supplies, networks) on rocket propulsion test stands.",
-          "Collaborated directly with senior systems architects to define functional requirements, technical specifications, and safety directives.",
-          "Conceived and programmed from scratch a specialized computer-aided design software tool strictly adhering to ATEX (explosive atmosphere) safety directives.",
-          "Designed ergonomic Human-Machine Interfaces (HMI/GUI), engineered secure data storage and sharing, and delivered a standalone executable deployed service-wide."
+          "Autonomously managed an applied R&D sprint adhering to rigorous research engineering methodologies.",
+          "Addressed the industrial challenge of factory-line LiDAR sensor leveling repeatability across diverse mobile robot chassis.",
+          "Developed an automated computer vision solution using OpenCV: analyzed laser sweep patterns to automatically validate and servo sensor alignment.",
+          "Implemented mechanical gimbals to ensure perfect leveling of the LiDAR sensors.",
+          "Formulated scientific test protocols, conducted state-of-the-art benchmarks, interfaced with technical suppliers, and delivered comprehensive engineering reports."
         ],
         fr: [
-          "Immersion au sein d'un service d'ingénieurs concepteurs de systèmes complexes (électronique, automates programmables, puissance, réseaux) sur bancs d'essai moteurs.",
-          "Définition du cahier des charges et expression des besoins fonctionnels en collaboration directe avec les ingénieurs seniors du site.",
-          "Conception et programmation intégrale d'un logiciel métier d'aide à la conception rigoureusement conforme aux normes ATEX (atmosphères explosives).",
-          "Développement complet de l'interface homme-machine (IHM), gestion sécurisée du stockage et du partage de données, et livraison d'un exécutable déployé dans le service."
+          "Conduite en pleine autonomie d'un projet de R&D selon les méthodes et exigences de l'ingénierie de recherche.",
+          "Résolution de la problématique industrielle du nivelage rapide et répétable des capteurs LiDARs sur différents châssis de robots en sortie d'usine.",
+          "Développement d'une méthode de vision par ordinateur sous OpenCV : analyse du balayage laser pour valider et asservir automatiquement le nivelage.",
+          "Mise en place de cardans mécaniques pour le montage des LiDARs afin d'assurer un nivellement parfait.",
+          "Définition de protocoles d'essais, veille technologique, relations avec fournisseurs spécialisés et rédaction des rapports de synthèse."
         ]
       },
-      skills: ["Normes ATEX", "Architecture Logicielle", "Conception IHM / GUI", "Systèmes Complexes", "Informatique Industrielle", "Bancs d'Essais Moteurs"]
+      skills: ["OpenCV", "Python", "Autonomous Mobile Robots (AMR)", "LiDAR Sensors", "Mechanical Gimbals", "Test Protocols", "R&D Engineering"]
     }
+
   ],
 
   translations: {
