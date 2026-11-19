@@ -173,6 +173,8 @@ const portfolioData = {
       externalUrl: "https://www.kickstarter.com/projects/petale/quickstarter-petale?ref=nav_search&category_id=28",
       image: "assets/images/kickstarter-hero.webp",
       gallery: [
+        "assets/images/kickstarter-layout-pieces.png",
+        "assets/images/kickstarter-2D-pieces.png",
         "assets/images/kickstarter-mockup-3.png",
         "assets/images/kickstarter-mockup-1.png"
       ],
@@ -553,7 +555,7 @@ const portfolioData = {
       navRole: "Creative Technologist",
       navStatus: "Available for R&D Stage",
       navProjects: "Projects",
-      navExperience: "Experience",
+      navExperience: "Experiences",
       navAbout: "About",
       navContact: "Contact",
       navDownloadCv: "Download CV",
@@ -561,7 +563,7 @@ const portfolioData = {
       heroBadge: "PORTFOLIO · 2026",
       heroName: "ALEXANDRE FORTIN",
       heroSubtitle: "Creative Technologist",
-      heroBio1: "Moving rapidly from an idea to a working prototype — mechanical, electronic, and software — with the rigor of the scientific method. I design concrete, tangible systems from a given idea or problem.",
+      heroBio1: "Moving rapidly from an idea to a working prototype. Mechanical, electronic, and software — with the rigor of the scientific method. I design concrete, tangible systems from a given idea or problem.",
 
       credEsilv: "ESILV — Master of Science in Engineering",
       credIft: "IFT — Creative Technologist Master",
@@ -573,7 +575,7 @@ const portfolioData = {
       heroScrollPrompt: "Scroll to explore",
 
       tabProjects: "PROJECTS",
-      tabExperience: "EXPERIENCE",
+      tabExperience: "EXPERIENCES",
 
       projectsHeading: "Selected Projects",
       projectsSubheading: "Tangible prototypes, autonomous robotics, reverse engineering, bio-materials, and web experiments.",
@@ -588,7 +590,6 @@ const portfolioData = {
       experienceSubheading: "Robotics R&D, operational team leadership, and rocket engine test systems.",
 
       contactHeading: "Contact",
-      contactSubheading: "Seeking an end-of-studies internship: R&D Engineer, Product Design, Rapid Prototyping.",
       contactEmailBtn: "Copy Email",
       contactEmailCopied: "Email copied to clipboard!",
 
@@ -610,7 +611,7 @@ const portfolioData = {
       heroBadge: "PORTFOLIO · 2026",
       heroName: "ALEXANDRE FORTIN",
       heroSubtitle: "Creative Technologist",
-      heroBio1: "Passer rapidement d'une idée à un prototype fonctionnel — mécanique, électronique et logiciel avec l'exigence de la démarche scientifique. Je conçois des systèmes concrets et tangibles à partir d'idée ou problème posés.",
+      heroBio1: "Passer rapidement d'une idée à un prototype fonctionnel. Mécanique, électronique et logiciel avec l'exigence de la démarche scientifique. Je conçois des systèmes concrets et tangibles à partir d'idée ou problème posés.",
 
       credEsilv: "ESILV — Diplôme d'Ingénieur",
       credIft: "IFT — Mastère Creative Technologist",
@@ -621,7 +622,7 @@ const portfolioData = {
       heroScrollPrompt: "Défilez pour découvrir",
 
       tabProjects: "PROJETS",
-      tabExperience: "EXPÉRIENCE",
+      tabExperience: "EXPÉRIENCES",
 
       projectsHeading: "Projets Réalisés",
       projectsSubheading: "Prototypes physiques concrets, robotique autonome, rétro-ingénierie mécanique, bio-matériaux et expérimentations interactives.",
